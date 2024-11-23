@@ -13,15 +13,14 @@ const (
 	sec          = min
 	nsec         = `(?:[.])?([0-9]{1,9})?`
 	weekday      = `(?:Mon|Monday|Tue|Tuesday|Wed|Wednesday|Thu|Thursday|Fri|Friday|Sat|Saturday|Sun|Sunday)`
-	monthAbbr    = `(Jan|January|Feb|Februray|Mar|March|Apr|April|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December|1[012]|0?[1-9])`
+	monthAbbr    = `(Jan|January|Feb|February|Mar|March|Apr|April|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December|1[012]|0?[1-9])`
 	offset       = `(Z|[+-][01][1-9]:[0-9]{2})?`
-	zone         = `(?:[a-zA-Z0-9+-]{3,6})?`
+	zone         = `([a-zA-Z0-9+-]{3,6})?`
 	ymdSep       = `[ /.-]?`
 	hmsSep       = `[ :.]?`
 	t            = `(?:t|T|\s*)?`
 	s            = `(?:\s*)?`
 	ampm         = `([aApP][mM])`
-	ampmHour     = `(1[01]|[0]?[0-9])`
 	shortYear    = `(2[0-9]{3}|19[7-9][0-9]|[0-9]{2})`
 	offsetZone   = `([+-][01][1-9]:[0-9]{2}|[a-zA-Z0-9+-]{3,6})?`
 	usOffsetZone = `(?:[(])?([+-][01][1-9]:[0-9]{2}|[a-zA-Z0-9+-]{3,6})?(?:[)])?`
